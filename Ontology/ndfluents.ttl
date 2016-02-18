@@ -1,0 +1,61 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix nd: <http://www.emse.fr/~zimmermann/Ontologies/ndfluents.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+nd:  a  owl:Ontology;
+  rdfs:label "NdFluents";
+  rdfs:comment "A reusable ontology for context in OWL."@en;
+  rdfs:seeAlso <http://www.emse.fr/~zimmermann/ndfluents.html>;
+  dc:date "2016-02-15T15:07:42+01:00"^^xsd:dateTime;
+  dc:creator <http://dblp.uni-trier.de/pers/g/Gim=eacute=nez=Garc=iacute=a:Jos=eacute=_M=>, <http://zimmer.aprilfoolsreview.com/antoine#me>;
+  owl:versionInfo "v0.1";
+  vann:preferredNamespacePrefix "nd" .
+
+dc:date a owl:AnnotationProperty .
+dc:creator a owl:AnnotationProperty .
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+nd:Context a owl:Class, rdfs:Class;
+  rdfs:label "context"@en;
+  rdfs:comment "Some context."@en;
+  rdfs:isDefinedBy nd:;
+  owl:disjointWith nd:ContextualPart .
+
+nd:ContextualPart a owl:Class, rdfs:Class;
+  rdfs:label "contextual part"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy nd:;
+  owl:disjointWith nd:Context .
+
+nd:contextualProperty a owl:ObjectProperty, rdf:Property;
+  rdfs:label "contextual property"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy nd:;
+  rdfs:domain nd:ContextualPart;
+  rdfs:range nd:ContextualPart .
+  
+nd:contextualExtent a owl:ObjectProperty, rdf:Property;
+  rdfs:label "contextual extent"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy nd:;
+  rdfs:domain nd:ContextualPart;
+  rdfs:range nd:Context .
+
+nd:contextualPartOf a owl:ObjectProperty, rdf:Property;
+  rdfs:label "contextual part of"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy nd:;
+  rdfs:domain nd:ContextualPart;
+  rdfs:range [
+    a owl:Class;
+	owl:complementOf nd:Context
+  ] .
+  
+nd:contextualDatatypeProperty a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "contextual datatype property"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy nd:;
+  rdfs:domain nd:ContextualPart .

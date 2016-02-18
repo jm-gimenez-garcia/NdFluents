@@ -1,0 +1,6978 @@
+@prefix 4d:   <http://www.emse.fr/~zimmermann/Ontologies/4dfluents.ttl#> .
+@prefix dbr:  <http://dbpedia.org/resource/> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix event:<http://purl.org/NET/c4dm/event.owl#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix provd:<http://www.emse.fr/~zimmermann/Ontologies/provd.ttl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wp:   <http://purl.org/az/worldpop#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+dbo:populationTotal rdfs:subPropertyOf 4d:temporalDatatypeProperty, provd:provenanceDatatypeProperty .
+
+
+wp:uscb2015
+    prov:wasAttributedTo  dbr:United_States_Census_Bureau;
+    a  provd:Provenance;
+    prov:wasGeneratedBy  [
+        a  prov:Activity;
+        a  event:Event;
+        event:time  [
+            a  time:Interval;
+            time:intervalDuring  [
+                a time:Interval;
+                time:hasDateTimeDescription [
+                    a  time:DateTimeDescription;
+                    time:year  "2015"^^xsd:gYear
+                ]
+         ]
+    ] .
+
+wp:prb1973-2015
+    prov:wasAttributedTo  dbr:Population_Reference_Bureau;
+    a  provd:Provenance;
+    prov:wasGeneratedBy  [
+        a  prov:Activity;
+        a  event:Event;
+        event:time  [
+            a  time:Interval;
+            time:hasBeginning  [
+                a time:Instant;
+                time:inDateTime [
+                    a  time:DateTimeDescription;
+                    time:year  "1973"^^xsd:gYear
+                ]
+            ];
+            time:hasEnd  [
+                a  time:Instant;
+                time:inDateTime [
+                    a  time:DateTimeDescription;
+                    time:year  "2015"^^xsd:gYear
+                ]
+            ]
+        ]
+    ] .
+
+wp:un2015
+    prov:wasAttributedTo  dbr:United_Nations_Department_of_Economic_and_Social_Affairs;
+    a  provd:Provenance;
+    prov:wasGeneratedBy  [
+        a  prov:Activity;
+        a  event:Event;
+        event:time  [
+            a  time:Interval;
+            time:intervalDuring  [
+                a time:Interval;
+                time:hasDateTimeDescription [
+                    a  time:DateTimeDescription;
+                    time:year  "2015"^^xsd:gYear
+                ]
+         ]
+    ] .
+
+wp:mg2010
+	prov:wasAttributedTo  [ rdfs:label "Madison Group"@en ];
+	a  provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "2010"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:m2008
+	prov:wasAttributedTo	dbr:Angus_Maddison
+	a  provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "2008"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:h2007
+	prov:wasAttributedTo	[ rdfs:label "HYDE"@en ];
+	a provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "2007"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:t1994
+	prov:wasAttributedTo	dbr:John_Tanton;
+	a provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "1994"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:b1980
+	prov:wasAttributedTo	[ rdfs:label "Biraben"@en ];
+	a provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "1980"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:mcj1978
+	prov:wasAttributedTo	dbr:Colin_McEvedy;
+	prov:wasAttributedTo	[ rdfs:label "Jones"@en ];
+	a provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "1978"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:th1975
+	prov:wasAttributedTo	[ rdfs:label "Thomlinson"@en ];
+	a provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "1975"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:d1974
+	prov:wasAttributedTo	[ rdfs:label "Durand"@en ];
+	a provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "1974"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:c1967
+	prov:wasAttributedTo	dbr:Colin_Clark_(economist);
+	a provd:Provenance;
+	prov:wasGeneratedBy  [
+		a  prov:Activity;
+		a  event:Event;
+		event:time  [
+			a  time:Interval;
+			time:intervalDuring  [
+				a time:Interval;
+				time:hasDateTimeDescription [
+					a  time:DateTimeDescription;
+					time:year  "1967"^^xsd:gYear
+				]
+			]
+		]
+	] .
+
+wp:year-10000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-10000"^^xsd:gYear
+    ] .
+
+wp:year-9000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-9000"^^xsd:gYear
+    ] .
+
+wp:year-8000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-8000"^^xsd:gYear
+    ] .
+
+wp:year-7000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-7000"^^xsd:gYear
+    ] .
+
+wp:year-6000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-6000"^^xsd:gYear
+    ] .
+
+wp:year-5000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-5000"^^xsd:gYear
+    ] .
+
+
+wp:year-4000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-4000"^^xsd:gYear
+    ] .
+
+wp:year-3000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-3000"^^xsd:gYear
+    ] .
+
+wp:year-2000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-2000"^^xsd:gYear
+    ] .
+
+wp:year-1000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-1000"^^xsd:gYear
+    ] .
+
+wp:year-200
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "-0200"^^xsd:gYear
+    ] .
+
+wp:year0
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0000"^^xsd:gYear
+    ] .
+
+wp:year100
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0100"^^xsd:gYear
+    ] .
+
+wp:year200
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0200"^^xsd:gYear
+    ] .
+
+wp:year300
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0300"^^xsd:gYear
+    ] .
+
+wp:year350
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0350"^^xsd:gYear
+    ] .
+
+wp:year400
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0400"^^xsd:gYear
+    ] .
+
+wp:year500
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0500"^^xsd:gYear
+    ] .
+
+wp:year600
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0600"^^xsd:gYear
+    ] .
+
+wp:year700
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0700"^^xsd:gYear
+    ] .
+
+wp:year800
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0800"^^xsd:gYear
+    ] .
+
+wp:year900
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "0900"^^xsd:gYear
+    ] .
+
+wp:year1000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1000"^^xsd:gYear
+    ] .
+
+wp:year1100
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1100"^^xsd:gYear
+    ] .
+
+wp:year1200
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1200"^^xsd:gYear
+    ] .
+
+wp:year1250
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1250"^^xsd:gYear
+    ] .
+
+wp:year1300
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1300"^^xsd:gYear
+    ] .
+
+wp:year1340
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1340"^^xsd:gYear
+    ] .
+
+wp:year1400
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1400"^^xsd:gYear
+    ] .
+
+wp:year1500
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1500"^^xsd:gYear
+    ] .
+
+wp:year1600
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1600"^^xsd:gYear
+    ] .
+
+wp:year1650
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1650"^^xsd:gYear
+    ] .
+
+wp:year1700
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1700"^^xsd:gYear
+    ] .
+
+wp:year1750
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1750"^^xsd:gYear
+    ] .
+
+wp:year1800
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1800"^^xsd:gYear
+    ] .
+
+wp:year1820
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1820"^^xsd:gYear
+    ] .
+
+wp:year1850
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1850"^^xsd:gYear
+    ] .
+
+wp:year1870
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1870"^^xsd:gYear
+    ] .
+
+wp:year1875
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1875"^^xsd:gYear
+    ] .
+
+wp:year1900
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1900"^^xsd:gYear
+    ] .
+
+wp:year1910
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1910"^^xsd:gYear
+    ] .
+
+wp:year1913
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1913"^^xsd:gYear
+    ] .
+
+wp:year1920
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1920"^^xsd:gYear
+    ] .
+
+wp:year1925
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1925"^^xsd:gYear
+    ] .
+
+wp:year1930
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1930"^^xsd:gYear
+    ] .
+
+wp:year1940
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1940"^^xsd:gYear
+    ] .
+
+wp:year1950
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1950"^^xsd:gYear
+    ] .
+
+wp:year1951
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1951"^^xsd:gYear
+    ] .
+
+wp:year1952
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1952"^^xsd:gYear
+    ] .
+
+wp:year1953
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1953"^^xsd:gYear
+    ] .
+
+wp:year1954
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1954"^^xsd:gYear
+    ] .
+
+wp:year1955
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1955"^^xsd:gYear
+    ] .
+
+wp:year1956
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1956"^^xsd:gYear
+    ] .
+
+wp:year1957
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1957"^^xsd:gYear
+    ] .
+
+wp:year1958
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1958"^^xsd:gYear
+    ] .
+
+wp:year1959
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1959"^^xsd:gYear
+    ] .
+
+wp:year1960
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1960"^^xsd:gYear
+    ] .
+
+wp:year1961
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1961"^^xsd:gYear
+    ] .
+
+wp:year1962
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1962"^^xsd:gYear
+    ] .
+
+wp:year1963
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1963"^^xsd:gYear
+    ] .
+
+wp:year1964
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1964"^^xsd:gYear
+    ] .
+
+wp:year1965
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1965"^^xsd:gYear
+    ] .
+
+wp:year1966
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1966"^^xsd:gYear
+    ] .
+
+wp:year1967
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1967"^^xsd:gYear
+    ] .
+
+wp:year1968
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1968"^^xsd:gYear
+    ] .
+
+wp:year1969
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1969"^^xsd:gYear
+    ] .
+
+wp:year1970
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1970"^^xsd:gYear
+    ] .
+
+wp:year1971
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1971"^^xsd:gYear
+    ] .
+
+wp:year1972
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1972"^^xsd:gYear
+    ] .
+
+wp:year1973
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1973"^^xsd:gYear
+    ] .
+
+wp:year1974
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1974"^^xsd:gYear
+    ] .
+
+wp:year1975
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1975"^^xsd:gYear
+    ] .
+
+wp:year1976
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1976"^^xsd:gYear
+    ] .
+
+wp:year1977
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1977"^^xsd:gYear
+    ] .
+
+wp:year1978
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1978"^^xsd:gYear
+    ] .
+
+wp:year1979
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1979"^^xsd:gYear
+    ] .
+
+wp:year1980
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1940"^^xsd:gYear
+    ] .
+
+wp:year1981
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1981"^^xsd:gYear
+    ] .
+
+wp:year1982
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1982"^^xsd:gYear
+    ] .
+
+wp:year1983
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1983"^^xsd:gYear
+    ] .
+
+wp:year1984
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1984"^^xsd:gYear
+    ] .
+
+wp:year1985
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1985"^^xsd:gYear
+    ] .
+
+wp:year1986
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1986"^^xsd:gYear
+    ] .
+
+wp:year1987
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1987"^^xsd:gYear
+    ] .
+
+wp:year1988
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1988"^^xsd:gYear
+    ] .
+
+wp:year1989
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1989"^^xsd:gYear
+    ] .
+
+wp:year1990
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1990"^^xsd:gYear
+    ] .
+
+wp:year1991
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1991"^^xsd:gYear
+    ] .
+
+wp:year1992
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1992"^^xsd:gYear
+    ] .
+
+wp:year1993
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1993"^^xsd:gYear
+    ] .
+
+wp:year1994
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1994"^^xsd:gYear
+    ] .
+
+wp:year1995
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1995"^^xsd:gYear
+    ] .
+
+wp:year1996
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1996"^^xsd:gYear
+    ] .
+
+wp:year1997
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1997"^^xsd:gYear
+    ] .
+
+wp:year1998
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1998"^^xsd:gYear
+    ] .
+
+wp:year1999
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "1999"^^xsd:gYear
+    ] .
+
+wp:year2000
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2000"^^xsd:gYear
+    ] .
+
+wp:year2001
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2001"^^xsd:gYear
+    ] .
+
+wp:year2002
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2002"^^xsd:gYear
+    ] .
+
+wp:year2003
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2003"^^xsd:gYear
+    ] .
+
+wp:year2004
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2004"^^xsd:gYear
+    ] .
+
+wp:year2005
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2005"^^xsd:gYear
+    ] .
+
+wp:year2006
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2006"^^xsd:gYear
+    ] .
+
+wp:year2007
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2007"^^xsd:gYear
+    ] .
+
+wp:year2008
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2008"^^xsd:gYear
+    ] .
+
+wp:year2009
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2009"^^xsd:gYear
+    ] .
+
+wp:year2010
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2010"^^xsd:gYear
+    ] .
+
+wp:year2011
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2011"^^xsd:gYear
+    ] .
+
+wp:year2012
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2012"^^xsd:gYear
+    ] .
+
+wp:year2013
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2013"^^xsd:gYear
+    ] .
+
+wp:year2014
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2014"^^xsd:gYear
+    ] .
+
+wp:year2015
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2015"^^xsd:gYear
+    ] .
+
+wp:year2016
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2016"^^xsd:gYear
+    ] .
+
+wp:year2017
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2017"^^xsd:gYear
+    ] .
+
+wp:year2018
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2018"^^xsd:gYear
+    ] .
+
+wp:year2019
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2019"^^xsd:gYear
+    ] .
+
+wp:year2020
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2020"^^xsd:gYear
+    ] .
+
+wp:year2021
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2021"^^xsd:gYear
+    ] .
+
+wp:year2022
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2022"^^xsd:gYear
+    ] .
+
+wp:year2023
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2023"^^xsd:gYear
+    ] .
+
+wp:year2024
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2024"^^xsd:gYear
+    ] .
+
+wp:year2025
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2025"^^xsd:gYear
+    ] .
+
+wp:year2026
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2026"^^xsd:gYear
+    ] .
+
+wp:year2027
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2027"^^xsd:gYear
+    ] .
+
+wp:year2028
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2028"^^xsd:gYear
+    ] .
+
+wp:year2029
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2029"^^xsd:gYear
+    ] .
+
+wp:year2030
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2030"^^xsd:gYear
+    ] .
+
+wp:year2031
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2031"^^xsd:gYear
+    ] .
+
+wp:year2032
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2032"^^xsd:gYear
+    ] .
+
+wp:year2033
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2033"^^xsd:gYear
+    ] .
+
+wp:year2034
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2034"^^xsd:gYear
+    ] .
+
+wp:year2035
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2035"^^xsd:gYear
+    ] .
+
+wp:year2036
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2036"^^xsd:gYear
+    ] .
+
+wp:year2037
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2037"^^xsd:gYear
+    ] .
+
+wp:year2038
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2038"^^xsd:gYear
+    ] .
+
+wp:year2039
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2039"^^xsd:gYear
+    ] .
+
+wp:year2040
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2040"^^xsd:gYear
+    ] .
+
+wp:year2041
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2041"^^xsd:gYear
+    ] .
+
+wp:year2042
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2042"^^xsd:gYear
+    ] .
+
+wp:year2043
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2043"^^xsd:gYear
+    ] .
+
+wp:year2044
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2044"^^xsd:gYear
+    ] .
+
+wp:year2045
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2045"^^xsd:gYear
+    ] .
+
+wp:year2046
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2046"^^xsd:gYear
+    ] .
+
+wp:year2047
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2047"^^xsd:gYear
+    ] .
+
+wp:year2048
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2048"^^xsd:gYear
+    ] .
+
+wp:year2049
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2049"^^xsd:gYear
+    ] .
+
+wp:year2050
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2050"^^xsd:gYear
+    ] .
+
+wp:year2055
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2055"^^xsd:gYear
+    ] .
+
+wp:year2060
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2060"^^xsd:gYear
+    ] .
+
+wp:year2065
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2065"^^xsd:gYear
+    ] .
+
+wp:year2070
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2070"^^xsd:gYear
+    ] .
+
+wp:year2075
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2075"^^xsd:gYear
+    ] .
+
+wp:year2080
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2080"^^xsd:gYear
+    ] .
+
+wp:year2085
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2085"^^xsd:gYear
+    ] .
+
+wp:year2090
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2090"^^xsd:gYear
+    ] .
+
+wp:year2095
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2095"^^xsd:gYear
+    ] .
+
+wp:year2100
+	a  time:Interval;
+    time:DateTimeDescription;
+		time:year  "2100"^^xsd:gYear
+    ] .
+
+wp:earth:year−10000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−10000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−10000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4M;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−10000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−10000:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5500000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−10000
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−9000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−9000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−8000:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−8000
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−8000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−8000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−8000:d1974
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7500000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−8000
+ ];
+    provd:provenanceExtent  wp:d1974;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−7000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−7000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−6000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 11000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−6000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−5000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 18000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−5000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−5000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−5000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−5000:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 12500000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−5000
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−4000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 28000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−4000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−4000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−4000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−3000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 45000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−3000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−3000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 14000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−3000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−2000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 72000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−2000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−2000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 27000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−2000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−1000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 115000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−1000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−1000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 50000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−1000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year−200:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 150000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year−200
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 231000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 188000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 150000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 255000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 170000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 200000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:d1974
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:d1974;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year0:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 256000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year0
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year100:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year100
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year100:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 195000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year100
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year200:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year200
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year200:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 202000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year200
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year200:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 256000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year200
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year200:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 190000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year200
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year300:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year300
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year300:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 205000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year300
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year350:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 254000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year350
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year400:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year400
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year400:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 209000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year400
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year400:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 206000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year400
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year400:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 190000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year400
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year500:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 280000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year500
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year500:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 210000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year500
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year500:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 206000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year500
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year500:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 190000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year500
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year600:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year600
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year600:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 213000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year600
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year600:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 206000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year600
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year600:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 200000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year600
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year600:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 237000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year600
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year700:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 310000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year700
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year700:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 226000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year700
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year700:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 207000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year700
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year700:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 210000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year700
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year800:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 330000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year800
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year800:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 240000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year800
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year800:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 224000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year800
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year800:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 220000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year800
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year800:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 261000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year800
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year900:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 360000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year900
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year900:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 269000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year900
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year900:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 226000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year900
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year900:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 240000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year900
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 400000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 310000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 267000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 295000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 254000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 265000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:d1974
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 310000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:d1974;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1000:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 280000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1000
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1100:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 353000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1100
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1100:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 301000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1100
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1100:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 320000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1100
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1200:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 450000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1200
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1200:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 393000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1200
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1200:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 400000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1200
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1200:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 360000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1200
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1200:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 384000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1200
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1250:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 400000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1250
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1250:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 416000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1250
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1300:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1300
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1300:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 392000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1300
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1300:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1300
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1300:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 432000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1300
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1300:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 360000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1300
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1300:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 400000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1300
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1340:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 443000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1340
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1340:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 378000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1340
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1400:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 440000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1400
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1400:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 390000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1400
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1400:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 374000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1400
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1400:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 350000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1400
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 438000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 461000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 460000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 425000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:d1974
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 490000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:d1974;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1500:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 427000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1500
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1600:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 660000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1600
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1600:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 556000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1600
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1600:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 554000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1600
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1600:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 579000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1600
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1600:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 545000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1600
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1600:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 498000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1600
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1650:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1650
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1650:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 545000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1650
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1650:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1650
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1650:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 516000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1650
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 760000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 603000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 603000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 600000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 679000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 610000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 600000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1700:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 641000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1700
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 795000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 791000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 814000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 770000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 720000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 700000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:d1974
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 770000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:d1974;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1750:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 731000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1750
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1000000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 978000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 989000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 900000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 954000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 900000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 900000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1800:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 890000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1800
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1820:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 712000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1820
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1820:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1042000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1820
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1850:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1265000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1850
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1850:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1262000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1850
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1850:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1263000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1850
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1850:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1241000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1850
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1850:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1200000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1850
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1850:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1200000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1850
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1870:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 884000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1870
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1870:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1276000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1870
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1875:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1325000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1875
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1656000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1650000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1563000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1654000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1600000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1633000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1625000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1600000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:d1974
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1680000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:d1974;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1900:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1668000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1900
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1910:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1750000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1910
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1910:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1777000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1910
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1913:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1543000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1913
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1913:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1793000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1913
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1920:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1860000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1920
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1920:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1863000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1920
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1920:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1912000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1920
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1920:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 1968000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1920
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1925:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2000000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1925
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1930:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2070000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1930
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1930:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2092000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1930
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1930:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2145000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1930
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1940:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2300000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1940
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1940:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2181000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1940
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1940:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2299000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1940
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1940:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2307000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1940
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1940:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2340000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1940
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2557628654;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2516000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2525149000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2104000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2544000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2527960000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2400000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2527000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2400000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1950:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2486000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1950
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1951:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2594939877;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1951
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1951:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2572850917;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1951
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1951:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2191000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1951
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1951:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2571663000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1951
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1952:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2636772306;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1952
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1952:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2619292068;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1952
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1952:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2250000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1952
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1952:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2617949000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1952
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1953:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2682053389;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1953
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1953:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2665865392;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1953
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1953:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2320000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1953
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1953:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2665959000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1953
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1954:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2730228104;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1954
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1954:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2713172027;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1954
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1954:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2353000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1954
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1954:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2716927000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1954
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1955:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2782098943;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1955
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1955:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2761650981;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1955
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1955:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2457000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1955
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1955:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2769074000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1955
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1956:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2835299673;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1956
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1956:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2811572031;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1956
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1956:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2524000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1956
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1956:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2822502000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1956
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1957:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2891349717;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1957
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1957:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2863042795;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1957
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1957:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2567000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1957
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1957:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2879934000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1957
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1958:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2948137248;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1958
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1958:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2916030167;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1958
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1958:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2596000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1958
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1958:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2939254000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1958
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1959:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3000716593;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1959
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1959:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2970395814;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1959
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1959:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2665000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1959
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1959:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2995909000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1959
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1960:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3043001508;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1960
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1960:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3026002942;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1960
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1960:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2764000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1960
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1960:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3041507000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1960
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1960:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3042000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1960
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1961:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3083966929;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1961
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1961:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3082830266;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1961
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1961:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2821000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1961
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1961:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3082161000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1961
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1962:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3140093217;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1962
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1962:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3141071531;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1962
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1962:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2902000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1962
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1962:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3135787000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1962
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1962:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3036000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1962
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1963:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3209827882;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1963
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1963:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3201178277;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1963
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1963:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 2965000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1963
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1963:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3201354000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1963
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1964:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3281201306;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1964
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1964:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3263738832;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1964
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1964:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3118000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1964
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1964:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3266477000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1964
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1965:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3350425793;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1965
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1965:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3329122479;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1965
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1965:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3218000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1965
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1965:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3333138000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1965
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1966:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3420677923;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1966
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1966:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3397475247;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1966
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1966:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3326000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1966
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1966:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3402224000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1966
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1966:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3288000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1966
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1967:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3490333715;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1967
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1967:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3468521724;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1967
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1967:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3381000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1967
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1967:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3471464000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1967
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1968:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3562313822;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1968
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1968:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3541674891;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1968
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1968:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3494000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1968
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1968:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3543086000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1968
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1969:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3637159050;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1969
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1969:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3616108749;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1969
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1969:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3613000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1969
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1969:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3615743000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1969
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3712697742;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3691172616;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3725000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3691157000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3710000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:b1980
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3637000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:b1980;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3600000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:d1974
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3,600,000,000– 3,700,000,000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:d1974;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1970:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3632000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1970
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1971:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3790326948;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1971
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1971:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3766754345;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1971
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1971:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3797000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1971
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1971:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3769818000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1971
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1972:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3866568653;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1972
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1972:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3842873611;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1972
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1972:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3901000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1972
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1972:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3846499000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1972
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1973:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3942096442;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1973
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1973:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3919182332;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1973
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1973:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4081000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1973
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1973:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3922793000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1973
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1973:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3923000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1973
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1973:c1967
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3860000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1973
+ ];
+    provd:provenanceExtent  wp:c1967;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1974:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4016608813;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1974
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1974:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3995304922;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1974
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1974:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4097000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1974
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1974:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3997677000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1974
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1975:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4089083233;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1975
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1975:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4071020434;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1975
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1975:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4086000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1975
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1975:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4070671000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1975
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1975:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 3900000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1975
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1975:th1975
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4000000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1975
+ ];
+    provd:provenanceExtent  wp:th1975;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1976:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4160185010;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1976
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1976:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4146135850;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1976
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1976:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4213000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1976
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1976:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4141445000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1976
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1977:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4232084578;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1977
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1977:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4220816737;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1977
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1977:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4308000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1977
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1977:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4213539000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1977
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1978:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4304105753;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1978
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1978:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4295664825;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1978
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1978:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4422000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1978
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1978:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4286317000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1978
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1979:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4379013942;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1979
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1979:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4371527871;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1979
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1979:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1979
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1979:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4363144000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1979
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1980:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4451362735;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1980
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1980:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4449048798;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1980
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1980:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4511000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1980
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1980:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4439529000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1980
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1980:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4461000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1980
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1981:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4534410125;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1981
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1981:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4528234634;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1981
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1981:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4523000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1981
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1981:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4514838000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1981
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1982:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4614566561;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1982
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1982:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4608962418;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1982
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1982:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4500000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1982
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1982:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4587307000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1982
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1983:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4695736743;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1983
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1983:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4691559840;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1983
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1983:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4539000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1983
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1983:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4676388000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1983
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1984:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4774569391;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1984
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1984:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4776392828;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1984
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1984:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4668000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1984
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1984:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4756521000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1984
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1985:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4856462699;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1985
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1985:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4863601517;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1985
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1985:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4748000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1985
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1985:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4837719000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1985
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1985:t1994
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5000000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1985
+ ];
+    provd:provenanceExtent  wp:t1994;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1986:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4940571232;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1986
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1986:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4953376710;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1986
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1986:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4832000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1986
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1986:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4920968000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1986
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1987:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5027200492;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1987
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1987:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5045315871;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1987
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1987:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 4932000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1987
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1987:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5006672000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1987
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1988:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5114557167;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1988
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1988:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5138214688;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1988
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1988:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5056000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1988
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1988:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5093306000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1988
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1989:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5201440110;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1989
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1989:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5230000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1989
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1989:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5133000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1989
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1989:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5180540000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1989
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1990:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5288955934;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1990
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1990:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5320816667;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1990
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1990:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5149000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1990
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1990:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5269029000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1990
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1990:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5308000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1990
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1991:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5371585922;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1991
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1991:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5408908724;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1991
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1991:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5141000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1991
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1991:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5351922000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1991
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1992:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5456136278;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1992
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1992:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5494899570;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1992
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1992:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5163000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1992
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1992:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5435722000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1992
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1993:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5538268316;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1993
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1993:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5578865109;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1993
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1993:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5201000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1993
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1993:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5518127000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1993
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1994:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5618682132;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1994
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1994:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5661086346;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1994
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1994:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5305000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1994
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1994:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5599396000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1994
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1995:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5699202985;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1995
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1995:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5760000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1995
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1995:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5741822412;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1995
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1995:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5443000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1995
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1995:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5681575000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1995
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1996:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5779440593;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1996
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1996:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5821016750;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1996
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1996:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5547000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1996
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1996:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5762212000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1996
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1997:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5857972543;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1997
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1997:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5840000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1997
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1997:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5898688337;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1997
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1997:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5688000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1997
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1997:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5842122000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1997
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1998:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5935213248;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1998
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1998:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5975303657;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1998
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1998:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5718000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1998
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1998:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5921366000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1998
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1999:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6012074922;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1999
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1999:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6051478010;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1999
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1999:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5850000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1999
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year1999:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5999622000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year1999
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2000:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6088571383;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2000
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2000:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6067000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2000
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2000:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6127700428;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2000
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2000:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6057000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2000
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2000:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6076558000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2000
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2000:h2007
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6145000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2000
+ ];
+    provd:provenanceExtent  wp:h2007;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2000:mcj1978
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 5750000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2000
+ ];
+    provd:provenanceExtent  wp:mcj1978;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2001:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6165219247;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2001
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2001:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6137000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2001
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2001:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6204147026;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2001
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2001:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6161000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2001
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2001:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6154791000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2001
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2002:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6242016348;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2002
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2002:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6215000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2002
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2002:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6280853817;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2002
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2002:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6303000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2002
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2002:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6231704000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2002
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2003:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6318590956;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2003
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2003:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6314000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2003
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2003:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6357991749;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2003
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2003:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6526000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2003
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2003:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6308364000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2003
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2004:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6395699509;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2004
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2004:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6396000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2004
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2004:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6435705595;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2004
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2004:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6782000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2004
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2004:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6374056000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2004
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2005:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6473044732;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2005
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2005:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6477000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2005
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2005:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6514094605;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2005
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2005:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7001000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2005
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2005:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6462987000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2005
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2006:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6551263534;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2006
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2006:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6555000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2006
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2006:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6593227977;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2006
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2006:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7276000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2006
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2006:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6540214000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2006
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2007:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6629913759;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2007
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2007:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6625000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2007
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2007:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6673105937;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2007
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2007:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7507000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2007
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2007:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6616689000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2007
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2008:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6709049780;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2008
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2008:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6705000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2008
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2008:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6753649228;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2008
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2008:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7626000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2008
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2008:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6694832000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2008
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2009:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6788214394;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2009
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2009:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6809972000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2009
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2009:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6834721933;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2009
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2009:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7478000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2009
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2009:m2008
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6764086000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2009
+ ];
+    provd:provenanceExtent  wp:m2008;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2010:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6866332358;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2010
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2010:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6892319000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2010
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2010:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6916183482;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2010
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2010:mg2010
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7814000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2010
+ ];
+    provd:provenanceExtent  wp:mg2010;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2011:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6944055583;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2011
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2011:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6986951000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2011
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2011:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 6997998760;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2011
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2012:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7022349283;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2012
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2012:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7057075000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2012
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2012:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7080072417;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2012
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2013:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7101027895;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2013
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2013:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7136796000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2013
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2013:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7162119434;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2013
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2014:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7178722893;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2014
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2014:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7238184000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2014
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2014:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7243784000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2014
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2015:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7256490011;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2015
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2015:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7336435000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2015
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2015:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7349472000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2015
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2016:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7334771614;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2016
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2016:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7432663.28;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2016
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2017:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7412778971;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2017
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2018:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7490427640;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2018
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2019:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7567402977;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2019
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2020:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7643402123;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2020
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2020:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7758157000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2020
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2021:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7718256830;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2021
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2022:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7792021317;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2022
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2023:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7864725370;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2023
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2024:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 7936271554;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2024
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2025:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8006580553;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2025
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2025:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8000000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2025
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2025:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8141661000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2025
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2026:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8075716000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2026
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2027:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8143729466;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2027
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2028:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8210559895;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2028
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2029:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8276190519;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2029
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2030:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8340606590;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2030
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2030:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8505000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2030
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2030:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8500766000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2030
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2031:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8403880343;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2031
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2032:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8466094022;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2032
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2033:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8527246205;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2033
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2034:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8587325154;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2034
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2035:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8646304704;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2035
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2035:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8838908000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2035
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2036:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8704239274;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2036
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2037:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8761189197;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2037
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2038:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8817138785;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2038
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2039:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8872066537;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2039
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2040:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8925949679;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2040
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2040:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9157234000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2040
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2041:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 8978822945;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2041
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2042:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9030723366;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2042
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2043:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9081617002;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2043
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2044:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9131462326;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2044
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2045:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9180225214;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2045
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2045:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9453892000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2045
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2046:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9227935007;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2046
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2047:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9274616811;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2047
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2048:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9320232984;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2048
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2049:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9364750182;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2049
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2050:uscb2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9408141302;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2050
+ ];
+    provd:provenanceExtent  wp:uscb2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2050:prb1973-2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9804000000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2050
+ ];
+    provd:provenanceExtent  wp:prb1973-2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2050:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9725148000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2050
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2055:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 9968809000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2055
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2060:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 10184290000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2060
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2065:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 10375719000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2065
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2070:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 10547989000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2070
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2075:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 10701653000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2075
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2080:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 10836635000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2080
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2085:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 10953525000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2085
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2090:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 11055270000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2090
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2095:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 11142461000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2095
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .
+
+wp:earth:year2100:un2015
+    a  4d:TemporalPart, provd:ProvenancePart;
+    dbo:populationTotal 11213317000;
+    4d:temporalExtent  [
+  a  time:Interval;
+  time:intervalDuring wp:year2100
+ ];
+    provd:provenanceExtent  wp:un2015;
+    4d:temporalPartOf  dbr:Earth;
+    provd:provenancePartOf  dbr:Earth .

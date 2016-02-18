@@ -1,0 +1,59 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix nd: <http://www.emse.fr/~zimmermann/Ontologies/ndfluents.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provd: <http://www.emse.fr/~zimmermann/Ontologies/provd.ttl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+provd:  a  owl:Ontology;
+  rdfs:label "4dFluents";
+  rdfs:comment "A reusable ontology for fluents in OWL."@en;
+  dc:date "2016-02-15T15:42:42+01:00"^^xsd:dateTime;
+  dc:creator <http://dblp.uni-trier.de/pers/g/Gim=eacute=nez=Garc=iacute=a:Jos=eacute=_M=>, <http://zimmer.aprilfoolsreview.com/antoine#me>;
+  owl:versionInfo "v0.1";
+  owl:imports nd:;
+  vann:preferredNamespacePrefix "4d" .
+
+provd:Interval a owl:Class, rdfs:Class;
+  rdfs:subClassOf nd:Context;
+  rdfs:label "interval"@en;
+  rdfs:comment "."@en;
+  rdfs:isDefinedBy provd: .
+
+provd:ProvenancePart a owl:Class, rdfs:Class;
+  rdfs:subClassOf nd:ContextualPart;
+  rdfs:label "provenance part"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy provd: .
+
+provd:provenanceProperty a owl:ObjectProperty, rdf:Property;
+  rdfs:subPropertyOf nd:contextualProperty;
+  rdfs:label "provenance property"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy provd:;
+  rdfs:domain provd:ProvenancePart;
+  rdfs:range provd:ProvenancePart .
+  
+provd:provenanceExtent a owl:ObjectProperty, rdf:Property;
+  rdfs:subPropertyOf nd:contextualExtent;
+  rdfs:label "provenance extent"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy provd:;
+  rdfs:domain nd:ProvenancePart;
+  rdfs:range nd:Interval .
+
+provd:provenancePartOf a owl:ObjectProperty, rdf:Property;
+  rdfs:subPropertyOf nd:contextualPartOf;
+  rdfs:label "provenance part of"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy provd:;
+  rdfs:domain nd:ProvenancePart .
+  
+provd:provenanceDatatypeProperty a owl:DatatypeProperty, rdf:Property;
+  rdfs:subPropertyOf nd:contextualDatatypeProperty;
+  rdfs:label "provenance datatype property"@en;
+  rdfs:comment ""@en;
+  rdfs:isDefinedBy provd:;
+  rdfs:domain nd:ProvenancePart .
