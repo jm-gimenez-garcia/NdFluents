@@ -1,6 +1,6 @@
 # NdFluents: A Multi-dimensional Contexts Ontology
 
-Ontology for representing arbitrary contextual information about statements. This ontology is a generalization of 4dFluents by Welty and Fikes. It is intended to be extended in a modular way for each different context. Temporal and Provenance contexts are provided as examples. We also provide the plugins needed for the different representation possibilities.
+Ontology for representing arbitrary contextual information about statements. This ontology is a generalization of [4dFluents by Welty and Fikes](http://www.intelligence.tuc.gr/~petrakis/publications/RuleMl2011.pdf). It is intended to be extended in a modular way for each different context. Temporal and Provenance contexts are provided as examples. We also provide the plugins needed for the different representation possibilities.
 
 The content and the permament identifiers are the following:
 
